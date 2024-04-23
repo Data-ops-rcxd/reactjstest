@@ -2,40 +2,44 @@
 import styles from "./Home.module.css";
 
 //import react libraries
-import { useState } from "react";
+// import { useState } from "react";
 
 const Home = () => {
-  const [lechugas, setlechugas] = useState(0);
+  // const [lechugas, setlechugas] = useState(0);
 
-  function aumentarlechugas() {
-    setlechugas(lechugas + 1);
-  }
+  // function aumentarlechugas() {
+  //   setlechugas(lechugas + 1);
+  // }
 
   return (
     <>
       <div className={styles.maincont}>
-        <div className={styles.header}>
-          <div className={styles.title}>Lechuga en moto</div>
-        </div>
         <div className={styles.middle}>
           <div className={styles.left}>
-            <div className={styles.imgcont}>
-              <img
-                className={styles.lechugaclick}
-                onClick={aumentarlechugas}
-                src="/src/assets/lechuga-batavia-x-1-unidad.jpg"
-                alt="lechugapequeña"
+            <form className={styles.form} action="">
+              <label className={styles.label}>LOGIN</label>
+              <input
+                className={styles.inputs}
+                id="GET-name"
+                type="text"
+                name="name"
+                placeholder="Username"
               />
+              <input
+                className={styles.inputs}
+                id="GET-password"
+                type="text"
+                name="name"
+                placeholder="Password"
+              />
+              <input className={styles.submit} type="submit" value="Sign in" />
+            </form>
+            <div className={styles.formbottom}>
+              Don&apos;t have an account? <a href="" className={styles.sign}>Sign in!</a>
             </div>
-            <div className={styles.lefttext}>Cantidad lechugas:</div>
-            <div className={styles.lefttext}>{lechugas}</div>
           </div>
           <div className={styles.right}>
-            <img
-              src="/src/assets/lechuga-batavia-x-1-unidad.jpg"
-              alt="lechugagrande"
-              className="lechugaprincipal"
-            />
+            <div className={styles.title}>Welcome to Co-piloto</div>
           </div>
         </div>
       </div>
