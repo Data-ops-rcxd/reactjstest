@@ -1,0 +1,40 @@
+.maincont {
+  font-family: "Alex Brush", cursive;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.header {
+  background-color: #99ffb1;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  width: 85%;
+}
+.title {
+  font-size: 70px;
+}
+.middle {
+  display: flex;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lechugaclick {
+  height: 300px;
+  width: 300px;
+}
+.lefttext {
+  font-size: 55px;
+}
+.imgcont {
+  display: flex;
+}
+.right {
+  display: flex;
+  height: 700px;
+}
